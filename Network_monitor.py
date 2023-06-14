@@ -96,7 +96,7 @@ class MainWindow(QMainWindow):
         # Network stats graph
         self.network_stat_graph = PlotWidget()
         self.network_stat_graph.setBackground('#202124')
-        self.network_stat_graph.setTitle("Live Network Usage (Download)", color='white', size='14pt')
+        self.network_stat_graph.setTitle("Live Network Usage", color='white', size='14pt')
         self.network_stat_graph.setLabel('left', 'Download Speed (Mbps)', color='white', size='12pt')
         self.network_stat_graph.setLabel('bottom', 'Time (s)', color='white', size='12pt')
         self.network_stat_graph.showGrid(x=True, y=True, alpha=0.3)
@@ -172,7 +172,7 @@ class MainWindow(QMainWindow):
 
         # Window settings
         self.setGeometry(100, 100, 800, 800)
-        self.setWindowTitle("Network Monitor")
+        self.setWindowTitle("JW's Network Monitor")
 
     def update_graph(self, download_speed, upload_speed):
         # Convert download_speed and upload_speed to Mbps
